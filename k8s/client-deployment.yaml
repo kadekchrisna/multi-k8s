@@ -14,10 +14,10 @@ spec:
     spec:
       containers:
         - name: client
-          image: stephengrider/multi-client
+          image: kadekchresna/multi-client
           resources:
             limits:
               memory: "128Mi"
-              cpu: "100m"
+              cpu: "10m"
           ports:
             - containerPort: 3000
