@@ -1,6 +1,6 @@
-docker build -t kadekchresna/multi-client:latest -t kadekchresna/multi-client:$SHA ./client/Dockerfile ./client
-docker build -t kadekchresna/multi-server:latest -t kadekchresna/multi-server:$SHA ./server/Dockerfile ./server
-docker build -t kadekchresna/multi-worker:latest -t kadekchresna/multi-worker:$SHA ./worker/Dockerfile ./worker
+docker build -t kadekchresna/multi-client:latest -t kadekchresna/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t kadekchresna/multi-server:latest -t kadekchresna/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t kadekchresna/multi-worker:latest -t kadekchresna/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push kadekchresna/multi-client:latest
 docker push kadekchresna/multi-server:latest
